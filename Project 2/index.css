@@ -1,0 +1,106 @@
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+
+    /*Animation*/
+    
+    animation-name: changeBackgroundColor;
+    animation-duration: 50s; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  @keyframes changeBackgroundColor {
+    0% { background-color: lightgray; }
+    15% { background-color: #ff0000; }
+    30% { background-color: #fbff00; } 
+    45% { background-color: #001aff; } 
+    70% { background-color: #ff00d4; } 
+    85% { background-color: #ff0000; } 
+    100% { background-color: lightgray; } 
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom:2em; 
+  }
+
+  #game-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #score {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  #word {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  #button {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 2em auto;
+    padding: 10px;
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+   
+  }
+  
+  #input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+  }
+  
+  #used-words {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #Number_of_Words_Used {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #used-words h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #used-words .word-item {
+    margin-bottom: 5px;
+  }
+ 
+  
